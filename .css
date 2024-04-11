@@ -1,0 +1,75 @@
+/* Estilos gerais */
+body {
+    font-family: 'Harry P', sans-serif; /* Utilizando uma fonte inspirada em Harry Potter */
+    margin: 0;
+    padding: 0;
+    cursor: url('wand.cur'), auto; /* Cursor personalizado em forma de varinha */
+}
+
+/* Estilos do banner */
+.banner {
+    background-image: url('hogsmeade.jpg'); /* Imagem de fundo inspirada em Hogsmeade */
+    color: #ffd700; /* Cor dourada */
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 48px; /* Tamanho maior para o título */
+    text-shadow: 2px 2px 2px #333; /* Sombra para destacar o texto */
+}
+
+.banner nav ul {
+    list-style-type: none;
+}
+
+.banner nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.banner nav ul li a {
+    color: #fff; /* Cor branca para os links */
+    text-decoration: none;
+    font-size: 20px; /* Tamanho dos links */
+    position: relative; /* Necessário para animação */
+}
+
+.banner nav ul li a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse sobre os links */
+}
+
+.banner nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Cor do efeito do feitiço */
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Transição suave do efeito */
+}
+
+.banner nav ul li a:hover::after {
+    opacity: 1; /* Opacidade máxima ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos da página de velas */
+.products {
+    padding: 20px;
+}
+
+/* Estilos da página de vendas */
+.checkout {
+    padding: 20px;
+}
